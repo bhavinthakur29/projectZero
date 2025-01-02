@@ -52,14 +52,13 @@ const App = () => {
           }
         />
 
-        {/* Catch-all route to redirect user to their respective dashboard */}
         <Route
           path="*"
           element={
             localStorage.getItem("role") ? (
               <Navigate to={`/${localStorage.getItem("role")}-dashboard`} />
             ) : (
-              <Navigate to="/login" />
+              <Navigate to="/" />
             )
           }
         />

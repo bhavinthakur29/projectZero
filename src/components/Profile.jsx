@@ -8,12 +8,12 @@ const Profile = () => {
   const navigate = useNavigate();
   const db = getFirestore();
   const [name, setName] = useState(auth.currentUser.displayName || "");
-  const [role, setRole] = useState("Student"); // Default role for new users
+  const [role, setRole] = useState("Student");
   const user = auth.currentUser;
 
   useEffect(() => {
     if (!user) {
-      navigate("/login"); // Redirect to login if user is not logged in
+      navigate("/");
     }
   }, [user, navigate]);
 

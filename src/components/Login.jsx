@@ -6,12 +6,12 @@ import { auth, googleProvider, db } from "../firebaseConfig";
 
 const Login = () => {
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false); // Added loading state
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
   const { role } = useParams();
 
   const handleGoogleLogin = async () => {
-    setLoading(true); // Set loading to true when login starts
+    setLoading(true);
 
     try {
       const { user } = await signInWithPopup(auth, googleProvider);
