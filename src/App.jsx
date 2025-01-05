@@ -9,6 +9,8 @@ import AdminDashboard from "./components/dashboards/AdminDashboard";
 import TutorDashboard from "./components/dashboards/TutorDashboard";
 import StudentDashboard from "./components/dashboards/StudentDashboard";
 import ParentDashboard from "./components/dashboards/ParentDashboard";
+import Footer from "./components/Footer";
+import ContactBtn from "./components/ContactBtn";
 
 const App = () => {
   return (
@@ -63,6 +65,8 @@ const App = () => {
           }
         />
       </Routes>
+      {/* <Footer /> */}
+      <ContactBtn />
     </BrowserRouter>
   );
 };
