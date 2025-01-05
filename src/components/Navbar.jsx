@@ -35,7 +35,7 @@ const Navbar = () => {
             </>
           ) : (
             <Link to="/" className="navbar-brand text-white">
-              TutorApp
+              Project Zero
             </Link>
           )}
         </div>
